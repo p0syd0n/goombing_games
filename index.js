@@ -47,6 +47,10 @@ app.get('/geometry_dash', (req, res) => {
   res.render('geometry_dash');
 });
 
+app.get('/realmz', (req, res) => {
+  res.render('realmz');
+});
+
 app.listen(port, async () => {
 
 
