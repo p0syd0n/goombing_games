@@ -51,6 +51,19 @@ app.get('/realmz', (req, res) => {
   res.render('realmz');
 });
 
+app.get('/1v1-lol', (req, res) => {
+  res.render('1v1-lol');
+});
+
+app.get('/moto-x3m', (req, res) => {
+  res.render('moto-x3m');
+});
+
+app.get('/moto-x3m-winter', (req, res) => {
+  res.render('moto-x3m-winter');
+});
+
+
 app.listen(port, async () => {
 
 
