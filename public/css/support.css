@@ -1,0 +1,12 @@
+li a{
+  color:#818181;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+}
+
+li a:hover{
+  color:#5a6a72;
+  font-family: Arial;
+}

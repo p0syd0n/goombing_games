@@ -15,8 +15,12 @@
 } */
 
 .content {
-  color: 
+  color: #869aa3;
+  padding: 20px;
+  margin: auto;
+  width: 80%
 }
+
 body {
   background-color: #061b23
 }
