@@ -1,0 +1,67 @@
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidenav {
+  font-family:'Arial';
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #052633;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-y: scroll;
+}
+
+.sidenav a {
+  font-family:'Arial';
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  font-family:'Arial';
+  color: #ffffff;
+}
+
+.sidenav img {
+  /*for a navbar background if you want one*/
+}
+
+.sidenav .closebtn {
+  font-family:'Arial';
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.opennav {
+  left: 12px;
+  top: -12px;
+  position: fixed;
+  z-index: 1;
+  color: #ffffff;
+  font-family:'Arial';
+  font-size: 70px;
+  font-weight: 600;
+  width: 90%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

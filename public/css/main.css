@@ -1,15 +1,22 @@
-li a{
-  color:#869aa3;
-  text-decoration: none;
-  font-family: Arial;
-}
-
-li a:hover{
-  color:#5a6a72;
-  font-family: Arial;
-}
-
 .main-title {
   color:#869aa3;
   font-family: Arial;
+  font-size: 45px;
+  text-align: center;
+  font-family: monospace;
+}
+/* 
+.gametext {
+  color:#869aa3;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+} */
+
+.content {
+  color: 
+}
+body {
+  background-color: #061b23
 }

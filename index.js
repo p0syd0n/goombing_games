@@ -15,8 +15,9 @@ const headers = {
   'X-Forwarded-For': "cheesemoose"
 }
 const title = 'Goombing Games'
+//Mapping game routes/titles to urls, so that I can dynamically assign routes
 const urlMap = {'1v1-lol': 'https://topvazstore.github.io/g/1v1-lol', 'doom': 'https://raz0red.github.io/webprboom/', 'half-life': 'https://pixelsuft.github.io/hl/xash.html#150', 'moto-x3m-winter': 'https://topvazstore.github.io/g/moto-x3m-winter', 'moto-x3m': 'https://topvazstore.github.io/g/moto-x3m', 'password-game': 'https://neal.fun/password-game/', 'quake': 'https://netquake.io', 'realmz': 'https://erth2.party/', 'slope': 'https://slope-p0syd0n.vercel.app/'}
-
+//Same thing but with games I have the source code for ok
 const sourceMap = {'geometry-dash': 'geometry-dash'}
 
 //begin server configs
@@ -27,7 +28,15 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.render('main', {urlMap: urlMap, sourceMap: sourceMap});
+  res.render('main');
+});
+
+app.get('/games', (req, res) => {
+  res.render('games', {urlMap: urlMap, sourceMap: sourceMap});
+});
+
+app.get('/support', (req, res) => {
+  res.render('support');
 });
 
 for (const [key, value] of Object.entries(urlMap)) {
@@ -46,3 +55,4 @@ app.listen(port, async () => {
   console.log(`Server started on port ${port}`);
 });
 //https://wai.137900.xyz/search?q=test
+
