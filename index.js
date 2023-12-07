@@ -2,9 +2,6 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import path from 'path';
-import fetch from 'node-fetch';
-import cheerio from 'cheerio';
-import fs from 'fs';
 
 dotenv.config();
 
@@ -18,7 +15,7 @@ const headers = {
   'X-Forwarded-For': "cheesemoose"
 }
 const title = 'Goombing Games'
-const urlMap = {'1v1-lol': 'https://topvazstore.github.io/g/1v1-lol', 'bomb-it-7': 'https://topvazstore.github.io/g/bomb-it-7', 'doom': 'https://raz0red.github.io/webprboom/', 'half-life': 'https://pixelsuft.github.io/hl/xash.html#150', 'moto-x3m-winter': 'https://topvazstore.github.io/g/moto-x3m-winter', 'moto-x3m': 'https://topvazstore.github.io/g/moto-x3m', 'password-game': 'https://neal.fun/password-game/', 'quake': 'https://netquake.io', 'realmz': 'https://erth2.party/', 'slope': 'https://slope-p0syd0n.vercel.app/'}
+const urlMap = {'1v1-lol': 'https://topvazstore.github.io/g/1v1-lol', 'doom': 'https://raz0red.github.io/webprboom/', 'half-life': 'https://pixelsuft.github.io/hl/xash.html#150', 'moto-x3m-winter': 'https://topvazstore.github.io/g/moto-x3m-winter', 'moto-x3m': 'https://topvazstore.github.io/g/moto-x3m', 'password-game': 'https://neal.fun/password-game/', 'quake': 'https://netquake.io', 'realmz': 'https://erth2.party/', 'slope': 'https://slope-p0syd0n.vercel.app/'}
 
 const sourceMap = {'geometry-dash': 'geometry-dash'}
 
