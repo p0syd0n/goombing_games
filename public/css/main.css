@@ -1,0 +1,15 @@
+li a{
+  color:#869aa3;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+li a:hover{
+  color:#5a6a72;
+  font-family: Arial;
+}
+
+.main-title {
+  color:#869aa3;
+  font-family: Arial;
+}
