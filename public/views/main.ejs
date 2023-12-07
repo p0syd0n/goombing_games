@@ -5,18 +5,12 @@
   </head>
   <body bgcolor='#061b23'>
     <h1 class='main-title'>Goombing since 2019</h1>
-    <ul>
-      <li><a href='/halflife'>Halflife</a></li>
-      <li><a href='/doom'>Doom</a></li>
-      <li><a href='/slope'>Slope</a></li>
-      <li><a href='/geometry_dash'>Geometry Dash Clone(hard)</a>
-      <li><a href='/1v1-lol'>1v1-lol</a></li>
-      <li><a href='/moto-x3m'>Moto X3M</a>
-      <li><a href='/moto-x3m-winter'>Moto X3M Winter</a>
-      <li><a href='/realmz'>Realmz.io</a></li>
-      <li><a href='/password-game'>Password Game</a></li>
-      
 
+    
+    <ul>
+      <% for ([key, value] of Object.entries(urlMap)) { %>
+        <li><a href='/<%=key%>'><%=key%></a></li>
+      <% } %>
     </ul>
     <br>
     

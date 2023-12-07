@@ -37,6 +37,7 @@
   </body>
   <canvas id="canvas"></canvas>
   <script>
+    //main class for objects
   class Entity{
     constructor(height, width, x, y, color) {
       this.height = height;
@@ -60,11 +61,13 @@
     }
     getHeight(){ return this.height; }
   }
+    //spike class
   class Spike extends Entity{
     constructor(height, width, x, y, color) {
       super(height,width,x,y,color);
     }
     drawEntity(ctx){
+      //drawing the spike
       ctx.beginPath();
       ctx.moveTo(this.x + this.width/2, this.y);
       ctx.lineTo(this.x, this.y+this.height);
@@ -74,7 +77,8 @@
       ctx.fill();
       this.x-=7;
     }
-    hasCollided(x,y){
+    //collision function ig
+    hasCollided(x,y) {
       if(y > this.y
       && (y-65) < this.y + this.height
       && x > (this.x + (this.width/2) - ((y-this.y)*(this.width/56))) + this.delay_correction_pixels
@@ -82,10 +86,12 @@
       else return false;
     }
   }
+    //Block function
   class Block extends Entity{
     constructor(height, width, x, y, color) {
       super(height,width,x,y,color);
     }
+    //drawing the block
     drawEntity(ctx){
       ctx.beginPath();
       ctx.fillStyle = this.color;
@@ -94,6 +100,7 @@
       this.x-=7;
       this.delay_correction_pixels = 15;
     }
+    //collision function again ig
     hasCollided(x,y){
       if(y > this.y
       && (y-65) < this.y + this.height
@@ -170,7 +177,7 @@
       }
       if(jumpPos > 0){
         jumpPos += 1;
-        h -= 3*(18-jumpPos); //1 is the jump scale factor
+        h -= 1*(18-jumpPos); //1 is the jump scale factor
         if(!gravityFlip && (h+y) > ground && (h+y) < (ground + 56) && jumpPos >= 18){ //ground + ... gives the block tolerance to fall below ground a bit before being set on the ground
           jumpPos = 0;
           h = ground - y;
