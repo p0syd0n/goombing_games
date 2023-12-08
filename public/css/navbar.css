@@ -59,6 +59,7 @@ nav {
   font-size: 70px;
   font-weight: 600;
   width: 90%;
+  margin-top: 15px;
 }
 
 @media screen and (max-height: 450px) {

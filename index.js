@@ -28,23 +28,25 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
-  res.render('main')
+  res.render('main', {title: title})
 })
 
 app.get('/games', (req, res) => {
-  res.render('games', {urlMap: urlMap, sourceMap: sourceMap})
+  res.render('games', {urlMap: urlMap, sourceMap: sourceMap, title: title})
 })
 
 app.get('/support', (req, res) => {
-  res.render('support')
+  res.render('support', {title: title})
 })
 
+//rendering the games that use iframes
 for (const [key, value] of Object.entries(urlMap)) {
   app.get(`/${key}`, (req, res) => {
     res.render('iframe-template', { url: value , title: title+': '+key})
   })
 }
 
+//rendering the locally hosted games
 for (const [key, value] of Object.entries(sourceMap)) {
   app.get(`/${key}`, (req, res) => {
     res.render(value)
