@@ -16,8 +16,8 @@ const headers = {
 }
 const title = 'Goombing Games'
 //Mapping game routes/titles to urls, so that I can dynamically assign routes
-const urlMap = {'1v1-lol': 'https://topvazstore.github.io/g/1v1-lol', 'doom': 'https://raz0red.github.io/webprboom/', 'half-life': 'https://pixelsuft.github.io/hl/xash.html#150', 'moto-x3m-winter': 'https://topvazstore.github.io/g/moto-x3m-winter', 'moto-x3m': 'https://topvazstore.github.io/g/moto-x3m', 'password-game': 'https://neal.fun/password-game/', 'quake': 'https://netquake.io', 'realmz': 'https://erth2.party/', 'slope': 'https://slope-p0syd0n.vercel.app/'}
-//Same thing but with games I have the source code for ok
+const urlMap = {'1v1-lol': 'https://topvazstore.github.io/g/1v1-lol', 'doom': 'https://raz0red.github.io/webprboom/', 'half-life': 'https://pixelsuft.github.io/hl/xash.html#150', 'moto-x3m-winter': 'https://topvazstore.github.io/g/moto-x3m-winter', 'moto-x3m': 'https://topvazstore.github.io/g/moto-x3m', 'password-game': 'https://neal.fun/password-game/', 'quake': 'https://netquake.io', 'realmz': 'https://erth2.party/', 'slope': 'https://slope-p0syd0n.vercel.app/', 'chat': 'https://atlantic.adaptable.app', 'apple-worm': 'https://topvazstore.github.io/g/apple-worm/', 'awesome-tanks-2': 'https://topvazstore.github.io/g/awesome-tanks-2', '3d-car-simulator': 'https://topvazstore.github.io/g2/3d-car-simulator', '2-player-city-racing': 'https://topvazstore.github.io/g2/2-player-city-racing'}
+//Same thing but with games I have the source code for
 const sourceMap = {'geometry-dash': 'geometry-dash'}
 
 //begin server configs
@@ -27,6 +27,7 @@ app.set('views', path.join(__dirname, 'public', 'views'))
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')))
 
+//static routes
 app.get('/', (req, res) => {
   res.render('main', {title: title})
 })
