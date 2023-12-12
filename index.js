@@ -30,11 +30,12 @@ const urlMap = {
   'awesome-tanks-2': 'https://topvazstore.github.io/g/awesome-tanks-2',
   '3d-car-simulator': 'https://topvazstore.github.io/g2/3d-car-simulator',
   'bloxd': 'https://bloxd.io',
-  'run3': 'https://player03.com/run/3/beta/',
-  'snow-rider': 'https://valana.online/snow-rider-3d-unblocked/',
+  'run3': 'https://run3.io/',
+  'snow-rider': 'https://slope-game.github.io/snow-rider-3d.html',//this fix game get html
   'idle-breakout': 'https://valana.online/idle-breakout-unblocked/',
-  'crossy-road': 'https://valana.online/crossy-road-unblocked',
-  'drift-hunters': 'https://valana.online/drift-hunters-unblocked/'
+  'crossy-road': 'https://crossyroad.netlify.app/',
+  'drift-hunters': 'https://valana.online/drift-hunters-unblocked/',
+  'elephant': 'https://mountain658.github.io/thisistheonlylevel.html'
 };
 //Same thing but with games I have the source code for
 const sourceMap = {
