@@ -31,7 +31,7 @@ const urlMap = {
   '3d-car-simulator': 'https://topvazstore.github.io/g2/3d-car-simulator',
   'bloxd': 'https://bloxd.io',
   'run3': 'https://run3.io/',
-  'snow-rider': 'https://slope-game.github.io/snow-rider-3d.html',//this fix game get html
+  'snow-rider': 'https://slope-game.github.io/snow-rider-3d.htmlhttps://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/',//this fix game get html
   'idle-breakout': 'https://valana.online/idle-breakout-unblocked/',
   'crossy-road': 'https://crossyroad.netlify.app/',
   'drift-hunters': 'https://valana.online/drift-hunters-unblocked/',
