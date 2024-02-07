@@ -35,11 +35,16 @@ const urlMap = {
   'idle-breakout': 'https://valana.online/idle-breakout-unblocked/',
   'crossy-road': 'https://crossyroad.netlify.app/',
   'drift-hunters': 'https://valana.online/drift-hunters-unblocked/',
-  'elephant': 'https://mountain658.github.io/thisistheonlylevel.html'
+  'elephant': 'https://mountain658.github.io/thisistheonlylevel.html',
+  'sand-game': 'https://boredhumans.com/falling_sand/',
+  
+
+
 };
 //Same thing but with games I have the source code for
 const sourceMap = {
   'geometry-dash': 'geometry-dash',
+  'sandboxels': 'sandboxels'
 };
 
 //begin server configs
