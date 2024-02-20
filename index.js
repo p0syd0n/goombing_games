@@ -38,8 +38,6 @@ const urlMap = {
   'elephant': 'https://mountain658.github.io/thisistheonlylevel.html',
   'sand-game': 'https://boredhumans.com/falling_sand/',
   
-
-
 };
 //Same thing but with games I have the source code for
 const sourceMap = {
