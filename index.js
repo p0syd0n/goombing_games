@@ -34,7 +34,6 @@ const urlMap = {
   'snow-rider': 'https://slope-game.github.io/snow-rider-3d.htmlhttps://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/',//this fix game get html
   'idle-breakout': 'https://valana.online/idle-breakout-unblocked/',
   'crossy-road': 'https://crossyroad.netlify.app/',
-  'drift-hunters': 'https://valana.online/drift-hunters-unblocked/',
   'elephant': 'https://mountain658.github.io/thisistheonlylevel.html',
   'sand-game': 'https://boredhumans.com/falling_sand/',
   
