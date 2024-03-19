@@ -36,6 +36,7 @@ const urlMap = {
   'crossy-road': 'https://crossyroad.netlify.app/',
   'elephant': 'https://mountain658.github.io/thisistheonlylevel.html',
   'sand-game': 'https://boredhumans.com/falling_sand/',
+  'spelunky': 'https://yancharkin.github.io/SpelunkyClassicHDhtml5/'
   
 };
 //Same thing but with games I have the source code for
