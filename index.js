@@ -20,29 +20,31 @@ const urlMap = {
   '1v1-lol': 'https://topvazstore.github.io/g/1v1-lol',
   'doom': 'https://raz0red.github.io/webprboom/',
   'half-life': 'https://pixelsuft.github.io/hl/xash.html#150',
-  'moto-x3m-winter': 'https://topvazstore.github.io/g/moto-x3m-winter',
-  'moto-x3m': 'https://topvazstore.github.io/g/moto-x3m',
+  'half-life(vercel-hosted)': 'https://hl-gamma.vercel.app/',
   'password-game': 'https://neal.fun/password-game/',
   'quake': 'https://netquake.io',
   'realmz': 'https://erth2.party/',
   'slope': 'https://slope-p0syd0n.vercel.app/',
   'apple-worm': 'https://topvazstore.github.io/g/apple-worm/',
   'awesome-tanks-2': 'https://topvazstore.github.io/g/awesome-tanks-2',
-  '3d-car-simulator': 'https://topvazstore.github.io/g2/3d-car-simulator',
   'bloxd': 'https://bloxd.io',
-  'run3': 'https://run3.io/',
+  'run3(site)': 'https://run3.io/',
   'snow-rider': 'https://slope-game.github.io/snow-rider-3d.htmlhttps://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/',//this fix game get html
   'idle-breakout': 'https://valana.online/idle-breakout-unblocked/',
   'crossy-road': 'https://crossyroad.netlify.app/',
   'elephant': 'https://mountain658.github.io/thisistheonlylevel.html',
   'sand-game': 'https://boredhumans.com/falling_sand/',
-  'spelunky': 'https://yancharkin.github.io/SpelunkyClassicHDhtml5/'
-  
+  'spelunky': 'https://yancharkin.github.io/SpelunkyClassicHDhtml5/',
+  'noclip': 'https://noclip.website',
+  'super-mario-64': 'https://super-mario64.vercel.app/',
+  'chilibeans': 'https://chili69.vercel.app/',
+  'portal-1.1.1': 'https://chili69.vercel.app/portal.html'
 };
 //Same thing but with games I have the source code for
 const sourceMap = {
   'geometry-dash': 'geometry-dash',
-  'sandboxels': 'sandboxels'
+  'sandboxels': 'sandboxels',
+  'run3': 'run3'
 };
 
 //begin server configs
