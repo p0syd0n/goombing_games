@@ -17,19 +17,15 @@ const headers = {
 const title = 'Goombing Games';
 //Mapping game routes/titles to urls, so that I can dynamically assign routes
 const urlMap = {
-  '1v1-lol': 'https://topvazstore.github.io/g/1v1-lol',
   'doom': 'https://raz0red.github.io/webprboom/',
   'half-life': 'https://pixelsuft.github.io/hl/xash.html#150',
   'half-life(vercel-hosted)': 'https://hl-gamma.vercel.app/',
   'password-game': 'https://neal.fun/password-game/',
   'quake': 'https://netquake.io',
-  'realmz': 'https://erth2.party/',
+  'realmz': 'https://realmz.io/',
   'slope': 'https://slope-p0syd0n.vercel.app/',
-  'apple-worm': 'https://topvazstore.github.io/g/apple-worm/',
-  'awesome-tanks-2': 'https://topvazstore.github.io/g/awesome-tanks-2',
   'bloxd': 'https://bloxd.io',
   'run3(site)': 'https://run3.io/',
-  'snow-rider': 'https://slope-game.github.io/snow-rider-3d.htmlhttps://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/',//this fix game get html
   'idle-breakout': 'https://valana.online/idle-breakout-unblocked/',
   'crossy-road': 'https://crossyroad.netlify.app/',
   'elephant': 'https://mountain658.github.io/thisistheonlylevel.html',
@@ -44,7 +40,8 @@ const urlMap = {
 const sourceMap = {
   'geometry-dash': 'geometry-dash',
   'sandboxels': 'sandboxels',
-  'run3': 'run3'
+  'run3': 'run3',
+  'snow-rider': 'snow-rider-original'
 };
 
 //begin server configs
