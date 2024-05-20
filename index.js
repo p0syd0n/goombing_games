@@ -33,8 +33,8 @@ const urlMap = {
   'spelunky': 'https://yancharkin.github.io/SpelunkyClassicHDhtml5/',
   'noclip': 'https://noclip.website',
   'super-mario-64': 'https://super-mario64.vercel.app/',
-  'chilibeans': 'https://chili69.vercel.app/',
-  'portal-1.1.1': 'https://chili69.vercel.app/portal.html'
+  'chilibeans': 'https://chili420.vercel.app/',
+  'portal-1.1.1': 'https://chili420.vercel.app/portal.html'
 };
 //Same thing but with games I have the source code for
 const sourceMap = {
